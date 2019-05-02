@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    top:10%;
+    position: absolute
+}
+
+header h1{
+    text-align: center;
+    margin: 0 60px;
+    font-size: 50px;
+}
+
+header p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.drums{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+   
+}
+.drums > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.drum1{
+    background: #D620DC;
+}
+.drum2 {
+    background: #FF06A6;
+}
+.drum3 {
+    background: #FF5775;
+}
+.drum4 {
+    background:#FF9652;
+}
+.drum5 {
+    background: #FFCB4C;
+}
+.drum6 {
+    background: #F9F871;
+}
+
+.drum1:hover {
+    background: rgb(170, 25, 175);
+}
+
+.drum2:hover {
+    background: rgb(223, 0, 145);
+}
+
+.drum3:hover {
+    background: rgb(224, 51, 83);
+}
+
+.drum4:hover {
+    background: rgb(233, 120, 44);
+}
+
+.drum5:hover {
+    background: rgb(202, 156, 40);
+}
+
+.drum6:hover {
+    background: rgb(207, 207, 94);
+}
+
+
+.visuals > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transform: scale(2);
+    z-index: -1 ;
+    
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    20%{
+        bottom: 30%;
+        left: 25%;
+    }
+    50%{
+        bottom: 70%;
+        left: 50%;
+    }
+    80%{
+        bottom: 20%;
+        left: 70%;
+    }
+    100%{
+        bottom: 0%;
+        left: 100%;
+    }
+}
